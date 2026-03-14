@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@qjapa7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="enter-overlay">
+         <p>Clique para entrar</p>
+     </div>
+     <div class="video-background">
+         <video autoplay muted loop id="bg-video">
+             <source src="61533a967650a2cda909e81caadba9a0.mp4" type="video/mp4">
+         </video>
+     </div>
+     <div class="background-overlay"></div>
+       <audio id="bg-audio" loop>
+           <source src="videoplayback.m4a" type="audio/mp4">
+       </audio>
+
+    <main class="profile-container">
+        <div class="glass-card">
+            <div class="profile-header">
+                <img src="avatar.jpg" alt="Avatar" class="avatar">
+                <h1 class="username">z9mídia</h1>
+                <p class="bio">Trying To be the number one fo my haters</p>
+            </div>
+
+            <div class="status-card">
+                <img src="avatar.jpg" alt="Mini Avatar" class="mini-avatar">
+                <div class="status-info">
+                    <span class="status-username">z9mídia <span class="status-dot"></span></span>
+                    <span class="last-seen">last seen unknown</span>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <div class="social-wrapper">
+                    <span class="tooltip" id="tiktok-tooltip">Copy TikTok</span>
+                    <a href="#" id="tiktok-btn"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="social-wrapper">
+                    <span class="tooltip" id="instagram-tooltip">Copy Instagram</span>
+                    <a href="#" id="instagram-btn"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social-wrapper">
+                    <span class="tooltip" id="spotify-tooltip">Copy Spotify</span>
+                    <a href="#" id="spotify-btn"><i class="fab fa-spotify"></i></a>
+                </div>
+                <div class="social-wrapper">
+                    <span class="tooltip" id="discord-tooltip">Copy Discord</span>
+                    <a href="#" id="discord-btn"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="views-counter">
+                <i class="fas fa-eye"></i> 116
+            </div>
+        </div>
+
+        <div class="music-player-card">
+            <div class="music-icon">
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="music-info">
+                <span class="song-title">ss</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="time-stamps">
+                    <span class="current-time">2:59</span>
+                    <span class="total-time">3:37</span>
+                </div>
+            </div>
+            <div class="player-controls">
+                <i class="fas fa-backward-step" id="prev-btn"></i>
+                <i class="fas fa-pause" id="play-pause-btn"></i>
+                <i class="fas fa-forward-step" id="next-btn"></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
